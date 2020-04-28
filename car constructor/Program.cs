@@ -10,9 +10,20 @@ namespace car_constructor
     {
         static void Main(string[] args)
         {
-            car Car = new car("Audi", "A8", 2, 2000);
+            int x = Vvod();
+            int y = Vvod();
+
+            car Car = new car(x, y);
+            
             Car.GetInfo();
             Console.ReadLine();
+        }
+       
+        static int Vvod()
+        {
+            int a = int.Parse(Console.ReadLine());
+            return a;
+
         }
     }
 }
