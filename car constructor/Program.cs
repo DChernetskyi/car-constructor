@@ -25,6 +25,7 @@ namespace car_constructor
             int a = int.Parse(Console.ReadLine());
             return a;
 
+
         }
         static string VvodMotor()
         {
