@@ -12,8 +12,12 @@ namespace car_constructor
 
         public int age;
         public int weight;
+        public motor motor;
+        
 
-        public car( int vozrast, int ves) { age = vozrast; weight = ves; }
+        
+
+        public car( int vozrast, int ves, motor name) { age = vozrast; weight = ves; motor = name; }
         
         public void GetInfo()
         {

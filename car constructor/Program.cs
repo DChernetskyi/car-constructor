@@ -12,9 +12,10 @@ namespace car_constructor
         {
             int x = Vvod();
             int y = Vvod();
-
-            car Car = new car(x, y);
-            
+            string q = VvodMotor();
+            motor motor = new motor(q);
+            car Car = new car(x, y, motor);
+            Car.motor.Zavesty();
             Car.GetInfo();
             Console.ReadLine();
         }
@@ -24,6 +25,11 @@ namespace car_constructor
             int a = int.Parse(Console.ReadLine());
             return a;
 
+        }
+        static string VvodMotor()
+        {
+            string t = Console.ReadLine();
+            return t;
         }
     }
 }
