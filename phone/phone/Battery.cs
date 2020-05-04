@@ -8,17 +8,12 @@ namespace phone
 {
     class Battery
     {
-        private int size;
-        public int Size 
-        {
-            set 
-            {
+        
+        public int Size { get; set; }
+        public Battery(int mAh) { Size = mAh; }
 
-            }
-            get 
-            {
-
-            }
-        }    
+        
+         
+          
     }
 }
